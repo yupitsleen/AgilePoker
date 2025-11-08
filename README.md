@@ -33,10 +33,11 @@ A responsive web application for agile software development teams featuring coll
 
 ## Tech Stack
 
-- **Frontend**: React 18 with TypeScript
-- **Styling**: Tailwind CSS
+- **Frontend**: React 19 with TypeScript
+- **Styling**: Tailwind CSS v4
 - **State Management**: Zustand
 - **Build Tool**: Vite
+- **Testing**: Vitest + React Testing Library
 - **Image Export**: html2canvas
 
 ## Getting Started
@@ -74,6 +75,32 @@ npm run build
 ```
 
 The built files will be in the `client/dist` directory.
+
+### Running Tests
+
+```bash
+cd client
+
+# Run tests in watch mode (development)
+npm test
+
+# Run tests once (CI/CD)
+npm run test:run
+
+# Run with UI interface
+npm run test:ui
+
+# Generate coverage report
+npm run test:coverage
+```
+
+**Test Coverage:**
+- ✅ 36 tests passing
+- ✅ State management (Zustand store)
+- ✅ Component rendering and behavior
+- ✅ User interactions and workflows
+
+See [TESTING.md](client/TESTING.md) for detailed testing guide.
 
 ## Usage
 
